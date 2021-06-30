@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    Font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.content{
+    min-width: 350px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:80vw;
+    height: 65vh;    
+    background-color:hsl(244, 38%, 16%);
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.content main{
+    width:50%;
+    height: 100%;  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.content main .content-main{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width:70%;
+    height: 80%;
+}
+
+.content aside{
+    display:flex;
+    width:50%;
+    height: 100%;   
+    background-color: hsl(277, 64%, 61%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+
+}
+
+.content aside img{
+    width:100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    mix-blend-mode: multiply;
+}
+
+.data{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    color:hsla(0, 0%, 100%, 0.6);
+    margin-top: 20px;
+}
+
+h1,h2{
+     color:  hsl(0, 0%, 100%);
+}
+
+.main-paragraph{
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+mark{
+    background-color:hsl(244, 38%, 16%);
+    color:hsl(277, 64%, 61%);
+}
+
+@media(max-width:768px){
+    .content{
+        flex-direction: column;
+        width: 80vw;
+        height:100%;
+    }
+
+    .content aside{
+        order: 1;
+        background-color: hsl(277, 64%, 61%);
+        width: 100%;
+    }
+
+    .content aside img{
+        width:100%;
+    }
+
+    .content main{
+        margin: 10px 10px;
+        width:100%;
+        order:2;
+        
+    }
+
+    .content main .content-main{
+        padding-top:20px;
+        gap: 25px;
+    }
+
+    .data{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px
+    }
+}
